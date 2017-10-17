@@ -12,22 +12,24 @@
 
         <div class="container">
 
-            <h3 class="text-center">Sequence diagram generator <span class="label label-info">for nrf_drv_radio802154</span></h3>
+            <h3 class="text-center">
+                Sequence diagram generator <span class="label label-info">for nrf_drv_radio802154</span>
+            </h3>
 
             <form id="draw-form">
-            <div class="form-group">
-            <label for="debug-str">GDB Log:</label>
-            <textarea class="form-control" rows="20" id="debug-str"></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="debug-str">GDB Log:</label>
+                    <textarea class="form-control" rows="20" id="debug-str"></textarea>
+                </div>
 
-            <div class="form-group">
-            <label for="debug-ptr">Index pointer:</label>
-            <input type="text" class="form-control" id="debug-ptr">
-            </div>
+                <div class="form-group">
+                    <label for="debug-ptr">Index pointer:</label>
+                    <input type="text" class="form-control" id="debug-ptr">
+                </div>
 
-            <div class="col-xs-12 text-center"> 
-            <button type="button" class="btn btn-success" id="draw">Generate sequence diagram</button>
-            </div>
+                <div class="col-xs-12 text-center"> 
+                    <button type="button" class="btn btn-success" id="draw">Generate sequence diagram</button>
+                </div>
             </form>
 
             <br /><br /><br />
@@ -35,8 +37,7 @@
             <div id="loading" style="display: none">
                 <div class="alert alert-success">Loading SVG..</div>
             </div>
-            <div id="diagram" style="text-align: center">
-            </div>
+            <div id="diagram" style="text-align: center"></div>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
